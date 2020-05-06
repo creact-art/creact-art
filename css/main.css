@@ -1,5 +1,43 @@
 /* main.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Work+Sans&display=swap');
+
 html {
-/*  background-color:#fd5962; */
+  background-color:#222;
+  color:#fd5962;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size:1.5em;
+  line-height: 1.4;
+  margin:0 auto;
+  text-align: center;
+  width:360px;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size:1em;
+  margin:30px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+ * Divs
+ */
+
+#logo {
+  display:block;
+  background:url('../assets/logo-creact-red.png') no-repeat;
+  background-size: contain;
+  height:80px;
+  margin: 160px auto 30px auto;
+  width:200px;
 }
