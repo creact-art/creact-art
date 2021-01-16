@@ -180,15 +180,15 @@ footer li p {
 	}
 	
 	footer {
-		height:50px;
+		height:92px;
 	}
 	
 	footer ul {
 		margin:0 auto;
 		padding:0;
 		position: absolute;
-		height:50px;
-		width:780px;
+		height:20px;
+		width:820px;
 		left:50%;
 		transform: translate(-50%);
 	}
@@ -196,8 +196,8 @@ footer li p {
 	footer li {
 		display:inline-block;
 		margin:0 auto;
-		padding: 5px 10px;
-		width:235px;
+		padding: 5px;
+		width:255px;
 	}
 	
 	footer li:last-child {
