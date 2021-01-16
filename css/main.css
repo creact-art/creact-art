@@ -1,57 +1,263 @@
 /* main.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Work+Sans:wght@300;500&display=swap');
 
 html {
-  background:url('../assets/landing-bg.png') no-repeat center center fixed;
-  background-size:cover;
-  color:#fd5962;
+  background-color: rgb(255,91,95);
   font-family: 'Poppins', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+body {
+	margin:0;
+	padding:0;
 }
 
 main {
-  height:250px;
-  left: 50%;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width:80%;
+  margin: 50px auto 0 auto;
+	width:80%;
+}
+
+a {
+	color:#ffffff;
+	text-decoration: none;
+}
+
+a:visited {
+	color:#ffffff;
 }
 
 h1 {
-  font-size: 4em;
+	color:#222222;
+  font-size: 2em;
+	line-height: 1.2em;
+	margin-bottom:50px;
+	text-align: center;
 }
 
 h2 {
-  color:#ffffff;
-  font-family: 'Work Sans', sans-serif;
-  font-size:1.5em;
-  line-height: 1.4;
+  color:#222222;
+  font-size:1.6em;
+	line-height:1.2em;
   margin:0 auto;
   text-align: center;
-  width:360px;
+  width:80%;
 }
 
-h3 {
-  color:#787878;
+p {
+  color:#222222;
   font-family: 'Work Sans', sans-serif;
-  font-size:1em;
+  font-size:1.2em;
+	font-weight: 300;
+	line-height:1.6em;
   margin:30px auto;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: justify-all;
+	width:100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+footer {
+	background-color:#222222;
+}
+
+footer ul {
+	margin:0;
+	padding:20px;
+}
+
+footer li {
+	display:block;
+}
+
+footer li p {
+	color:#ffffff;
+	font-size:.8em;
 }
 
 /*
  * Divs
  */
 
+#store-buttons{
+	margin: 25px auto 50px auto;
+	width:180px;
+}
+
+#store-buttons a {
+	display:inline-block;
+	height:60px;
+	margin-right:10px;
+	width:180px;
+}
+
+#store-buttons a:last-child {
+	margin-right:0;
+}
+
+#store-buttons #btn-ios {
+	background:transparent url("../assets/btn-ios.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#store-buttons #btn-android {
+	background:transparent url("../assets/btn-android.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
 #logo {
   display:block;
-  background:url('../assets/logo-creact-red.png') no-repeat;
+  background:url('../assets/logo-creact.png') no-repeat;
   background-size: contain;
   height:80px;
   margin: 0 auto 30px auto;
-  width:200px;
+  width:160px;
+}
+
+#app-images {
+	background: transparent url(../assets/img-screenshots.png) no-repeat;
+	background-position: center;
+	background-size:cover;
+	display:block;
+	height:320px;
+}
+
+/*
+ * Classes
+ */
+
+.bold {
+	font-weight:500;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+	
+	main {
+		margin: 50px auto 0 auto;
+		width:720px;
+	}
+
+	a {
+		color:#ffffff;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color:#ffffff;
+	}
+
+	h1 {
+		color:#222222;
+		font-size: 2.2em;
+		line-height: 1.2em;
+		margin-bottom:25px;
+		text-align: center;
+	}
+
+	h2 {
+		color:#222222;
+		font-size:1.2em;
+		margin:0 auto;
+		text-align: center;
+		width:80%;
+	}
+
+	p {
+		color:#222222;
+		font-family: 'Work Sans', sans-serif;
+		font-size:1em;
+		font-weight: 300;
+		line-height:1.6em;
+		margin:30px auto;
+		text-align: center;
+		width:80%;
+	}
+	
+	footer {
+		height:50px;
+	}
+	
+	footer ul {
+		margin:0 auto;
+		padding:0;
+		position: absolute;
+		height:50px;
+		width:780px;
+		left:50%;
+		transform: translate(-50%);
+	}
+	
+	footer li {
+		display:inline-block;
+		margin:0 auto;
+		padding: 5px 10px;
+		width:235px;
+	}
+	
+	footer li:last-child {
+		padding-right:none;
+	}
+	
+	
+	/*
+	 * Divs
+	 */
+
+	#store-buttons{
+		margin: 25px auto;
+		width:375px;
+	}
+
+	#store-buttons a {
+		display:inline-block;
+		height:60px;
+		margin-right:10px;
+		width:180px;
+	}
+
+	#store-buttons a:last-child {
+		margin-right:0;
+	}
+
+	#store-buttons #btn-ios {
+		background:transparent url("../assets/btn-ios.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	#store-buttons #btn-android {
+		background:transparent url("../assets/btn-android.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	#logo {
+		display:block;
+		background:url('../assets/logo-creact.png') no-repeat;
+		background-size: contain;
+		height:80px;
+		margin: 0 auto 30px auto;
+		width:160px;
+	}
+
+	#app-images {
+		background: transparent url(../assets/img-screenshots.png) no-repeat;
+		background-position: center;
+		display:block;
+		height:460px;
+	}
+
+	/*
+	 * Classes
+	 */
+
+	.bold {
+		font-weight:500;
+	}
 }
