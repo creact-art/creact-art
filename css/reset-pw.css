@@ -1,0 +1,88 @@
+/* reset-pw.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Work+Sans&display=swap');
+
+html, body {
+  background-color:#222222;
+  color:#ffffff;
+  font-family: "Work Sans", sans-serif;
+  padding: 0;
+}
+
+*:focus {
+  border: 2px solid #6bffc7;
+  outline: none;
+}
+
+body {
+  background-color:#000000;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding:60px;
+  width:320px;
+}
+
+form input {
+  font-family:"Work Sans", sans-serif;
+  border:2px solid white;
+  border-radius: 5px;
+  margin-bottom:25px;
+  padding:10px;
+  width: 296px;
+}
+
+form input[type=submit] {
+  background-color:#ff5b5f;
+  border:2px solid #ff5b5f;
+  color:white;
+  cursor: pointer;
+  display:block;
+  font-family:"Work Sans", sans-serif;
+  font-size:.7em;
+  font-weight:800;
+  letter-spacing:1px;
+  margin: 20px auto;
+  text-transform:uppercase;
+  width:180px;
+}
+
+form input[type=submit]:focus {
+  border:2px solid rgba(255,255,255,0.5);
+}
+
+form label {
+  display:block;
+  font-family: "Work Sans", sans-serif;
+  font-size:.7em;
+  font-weight:800;
+  letter-spacing:1px;
+  margin:0 0 10px 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family:"Poppins", sans-serif;
+  font-size:4vh;
+  line-height:1.2;
+  margin-block-start: 0px;
+  margin-block-end: 10px;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size:2.5vh;
+  line-height:1.5;
+  margin-bottom: 40px;
+  margin-block-start: 0px;
+  margin-block-end: px;
+}
+
+/* Divs */
+#logo {
+  background:transparent url("../assets/logo-creact-red.png") no-repeat;
+  background-size: contain;
+  display:block;
+  height:60px;
+  margin: 0 auto 40px auto;
+  width:120px;
+}
